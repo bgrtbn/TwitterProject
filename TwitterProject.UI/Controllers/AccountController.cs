@@ -17,6 +17,12 @@ namespace TwitterProject.UI.Controllers
         {
             appUserService = new AppUserService();
         }
+        public ActionResult Register()
+        {
+            return View();
+        }
+
+
         [HttpPost]
         public ActionResult Register(AppUser data)
         {
