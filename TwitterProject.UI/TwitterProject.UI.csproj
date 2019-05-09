@@ -1071,9 +1071,11 @@
     <Compile Include="Areas\Member\MemberAreaRegistration.cs" />
     <Compile Include="Areas\Member\Models\DTO\TweetDTO.cs" />
     <Compile Include="Areas\Member\Models\VM\TweetVM.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\VM\LoginVM.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -1107,8 +1109,7 @@
     <Folder Include="Areas\Member\Views\Home\" />
     <Folder Include="Areas\Member\Views\Shared\" />
     <Folder Include="Areas\Member\Views\Tweet\" />
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
+    <Folder Include="Views\Account\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TwitterProject.Core\TwitterProject.Core.csproj">
