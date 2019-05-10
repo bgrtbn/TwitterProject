@@ -11,9 +11,9 @@ namespace TwitterProject.Service.Option
 {
   public  class AppUserService:ServisBase<AppUser>
     {
-        public bool CheckCredentials(string userName, string password , string Mail)
+        public bool CheckCredentials(string userName, string password )
         {
-            return Any(x => (x.UserName == userName || x.Email == Mail) && x.Password == password);
+            return Any(x => x.UserName == userName && x.Password == password);
         }
 
         public AppUser FindByUserName(string userName)

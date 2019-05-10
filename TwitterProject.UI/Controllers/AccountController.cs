@@ -50,10 +50,10 @@ namespace TwitterProject.UI.Controllers
         {
             if (ModelState.IsValid)
             {
-                if (appUserService.CheckCredentials(credentials.UserName, credentials.Password , credentials.Mail))
+                if (appUserService.CheckCredentials(credentials.UserName, credentials.Password))
                 {
                     AppUser user = appUserService.FindByUserName(credentials.UserName);
-
+                    Session["ID"] = user.ID;
                     string cookie = user.UserName;
                     FormsAuthentication.SetAuthCookie(cookie, true);
 

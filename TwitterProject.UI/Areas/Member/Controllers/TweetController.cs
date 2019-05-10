@@ -63,5 +63,6 @@ namespace TwitterProject.UI.Areas.Member.Controllers
         //    jr.Likes = service.LikeService.GetDefault(x => x.ArticleID == id).Count();
         //    return Json(jr, JsonRequestBehavior.AllowGet);
 
-        }
+        //}
     }
+}

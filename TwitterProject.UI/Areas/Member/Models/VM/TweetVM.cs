@@ -15,14 +15,15 @@ namespace TwitterProject.UI.Areas.Member.Models.VM
             Comments = new List<Comment>();
             AppUsers = new List<AppUser>();
             appUser = new AppUser();
-
-            tweet = new TweetDTO();
+            tweetdto = new TweetDTO();
+            Tweets = new List<Tweet>();
         }
         public List<Like> Likes { get; set; }
         public List<Comment> Comments { get; set; }
         public List<AppUser> AppUsers  { get; set; }
-        public TweetDTO tweet { get; set; }
+        public List<Tweet> Tweets { get; set; }
         public AppUser appUser { get; set; }
         public DateTime? CreatedDate { get; set; }
+        public TweetDTO tweetdto { get; set; }
     }
 }

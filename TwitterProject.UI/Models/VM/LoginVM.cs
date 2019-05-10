@@ -11,8 +11,7 @@ namespace TwitterProject.UI.Models.VM
         [Required(ErrorMessage = "Kullanıcı Adı Hatası!")]
         public string UserName { get; set; }
 
-        [Required(ErrorMessage = "Kullanıcı Mail Hatası!")]
-        public string Mail { get; set; }
+        
 
         [Required(ErrorMessage = "Şifre Hatası!")]
         public string Password { get; set; }

@@ -7,6 +7,7 @@ namespace TwitterProject.UI.Areas.Member.Models.DTO
 {
     public class TweetDTO
     {
+        public Guid ID { get; set; }
         public string Content { get; set; }
         public string TweetImage { get; set; }
         public string XSmallTweetImage { get; set; }
